@@ -44,3 +44,10 @@ jobs:
       env:
         USERNAME: ${{ github.actor }}
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+        
+        - uses: actions/upload-artifact@v2
+        with:
+          name: v1.19.4-0.9.x-unknown
+          path: ./v1.19.4-0.9.x-unknown.zip
+
